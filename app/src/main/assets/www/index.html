@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0B8F8A">
+<title>MOULAYCARE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="splash">
+  <div class="splash-logo"></div>
+  <div class="splash-name">MOULAY<span>CARE</span></div>
+  <div class="splash-sub">إدارة العيادة بين يديك</div>
+</div>
+
+<div id="app" hidden>
+  <header id="topbar"></header>
+  <main id="view"></main>
+  <button id="fab" aria-label="إضافة"></button>
+  <nav id="nav">
+    <button data-nav="home"><i data-ic="home"></i><span>الرئيسية</span></button>
+    <button data-nav="patients"><i data-ic="users"></i><span>المرضى</span></button>
+    <button data-nav="appts"><i data-ic="cal"></i><span>المواعيد</span></button>
+    <button data-nav="notifs"><i data-ic="bell"></i><span>التنبيهات</span><b id="badge" hidden></b></button>
+    <button data-nav="settings"><i data-ic="gear"></i><span>الإعدادات</span></button>
+  </nav>
+</div>
+
+<div id="sheetWrap" hidden><div id="sheetBg"></div><div id="sheet"><div class="grab"></div><div id="sheetBody"></div></div></div>
+<div id="dialog" hidden></div>
+<div id="toasts"></div>
+<input type="file" id="fileIn" accept="image/*,application/pdf" hidden>
+
+<script src="app.js"></script>
+</body>
+</html>
